@@ -7,8 +7,10 @@ def tratar_dados():
         data = pd.read_csv('Data/Atividade2.csv')
     except FileNotFoundError:
         print("Arquivo não encontrado")
+        return
     else:
         print("Arquivo encontrado")
+
 
     #Quantidade de linhas originais
     linhas_originais = data.shape[0]
@@ -50,8 +52,8 @@ def tratar_dados():
     #Relatório
     relatorio_evidencias = (
         f"Data da execução: {data_hora}\n"
-        f"Base original: {"Data/Atividade2.csv"}\n"
-        f"Base tratada gerada: {"Data/Atividade2Revisada.csv"}\n"
+        f"Base original: Data/Atividade2.csv\n"
+        f"Base tratada gerada: Data/Atividade2Revisada.csv\n"
         f"\n"
         f"1 - ANÁLISE INICIAL\n"
         f"- Total de características (colunas): {colunas_originais}\n"
@@ -72,5 +74,5 @@ def tratar_dados():
     with open("Data/evidencia.txt", 'w', encoding='utf-8') as f:
         f.write(relatorio_evidencias)
 
-    print(f"Concluído! A base limpa foi salva em '{"Data/Atividade2Revisada.csv"}'.")
-    print(f"As evidências do tratamento foram geradas no arquivo '{"Data/evidencia.txt"}'.")
+    print(f"Concluído! A base limpa foi salva em 'Data/Atividade2Revisada.csv'.")
+    print(f"As evidências do tratamento foram geradas no arquivo 'Data/evidencia.txt'.")

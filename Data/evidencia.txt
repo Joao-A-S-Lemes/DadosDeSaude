@@ -1,9 +1,8 @@
-=== EVIDÊNCIA DE TRATAMENTO DE DADOS ===
-Data da execução: 2026-10-12 14:23:10
+Data da execução: 2026-10-12 17:43:25
 Base original: Data/Atividade2.csv
 Base tratada gerada: Data/Atividade2Revisada.csv
-----------------------------------------
-1. ANÁLISE INICIAL
+
+1 - ANÁLISE INICIAL
 - Total de características (colunas): 12
 - Nomes das colunas: id, gender, age, hypertension, heart_disease, ever_married, work_type, Residence_type, avg_glucose_level, bmi, smoking_status, stroke
 - Total de registros (linhas): 5110
@@ -21,12 +20,12 @@ smoking_status         0
 stroke                 0
 dtype: int64
 
-2. TRATAMENTO APLICADO
+2 - TRATAMENTO APLICADO
 - Linhas 100% vazias foram removidas.
 - Colunas numéricas preenchidas com a mediana.
 - Colunas de texto preenchidas com a string 'N/A'.
 
-3. VALIDAÇÃO E EVIDÊNCIAS (PÓS-TRATAMENTO)
+3 - VALIDAÇÃO E EVIDÊNCIAS (PÓS-TRATAMENTO)
 - Registros finais processados: 5110
 - Dados ausentes restantes: 0 (Prova de tratamento eficaz)
 - Status final por coluna:
@@ -42,4 +41,3 @@ avg_glucose_level    0
 bmi                  0
 smoking_status       0
 stroke               0
-========================================
