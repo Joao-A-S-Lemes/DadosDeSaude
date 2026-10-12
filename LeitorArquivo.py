@@ -66,7 +66,6 @@ def tratar_dados():
         f"- Registros finais processados: {registros_finais}\n"
         f"- Dados ausentes restantes: {total_ausentes_depois} (Prova de tratamento eficaz)\n"
         f"- Status final por coluna:\n{ausentes_depois.to_string()}\n"
-        f"========================================\n"
     )
 
     #Escrevce o relatório para comprovação
