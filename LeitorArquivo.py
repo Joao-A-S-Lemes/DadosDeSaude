@@ -16,6 +16,10 @@ def tratar_dados():
     #Nomes das colunas
     colunas = data.columns.tolist()
 
+    #Verificar dados ausentes
+    ausentes = data.isnull().sum()
+    total_ausentes = ausentes.sum()
+
 
     print(linhas_originais)
     print(colunas_originais)
