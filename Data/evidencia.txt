@@ -1,4 +1,4 @@
-Data da execução: 2026-10-12 17:43:25
+Data da execução: 2026-10-12 21:19:36
 Base original: Data/Atividade2.csv
 Base tratada gerada: Data/Atividade2Revisada.csv
 

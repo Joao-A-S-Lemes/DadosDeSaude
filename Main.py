@@ -1,4 +1,7 @@
 import LeitorArquivo
-import pandas as pd
+import Graficos
 
 LeitorArquivo.tratar_dados()
+
+Graficos.graficos()
+
