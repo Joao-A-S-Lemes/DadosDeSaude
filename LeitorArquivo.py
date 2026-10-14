@@ -9,8 +9,7 @@ def tratar_dados():
         print("Arquivo não encontrado")
         return
     else:
-        print("Arquivo encontrado")
-
+        print("\nArquivo Atividade2.csv encontrado, iniciando limpeza...")
 
     #Quantidade de linhas originais
     linhas_originais = data.shape[0]
@@ -59,7 +58,7 @@ def tratar_dados():
         f"- Total de características (colunas): {colunas_originais}\n"
         f"- Nomes das colunas: {', '.join(colunas)}\n"
         f"- Total de registros (linhas): {linhas_originais}\n"
-        f"- Total de dados ausentes encontrados: {ausentes}\n\n"
+        f"- Total de dados ausentes encontrados: {total_ausentes}\n\n"
         f"2 - TRATAMENTO APLICADO\n"
         f"- Linhas 100% vazias foram removidas.\n"
         f"- Colunas numéricas preenchidas com a mediana.\n"
@@ -74,5 +73,5 @@ def tratar_dados():
     with open("Data/evidencia.txt", 'w', encoding='utf-8') as f:
         f.write(relatorio_evidencias)
 
-    print(f"Concluído! A base limpa foi salva em 'Data/Atividade2Revisada.csv'.")
-    print(f"As evidências do tratamento foram geradas no arquivo 'Data/evidencia.txt'.")
+    print(f"\nConcluído! A base limpa foi salva em 'Data/Atividade2Revisada.csv'.")
+    print(f"\nAs evidências do tratamento foram geradas no arquivo 'Data/evidencia.txt'.")
