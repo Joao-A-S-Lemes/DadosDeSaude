@@ -33,7 +33,7 @@ def analisar():
         'smokes': 'Fumante'
     })
 
-    print("\nConcluído! Resultados a caminho...")
+    print("\nDados carregados! Resultados a caminho...")
 
     #Separar os grupos (filtros)
     com_avc = dados[dados['avc'] == 1]
@@ -74,4 +74,4 @@ def analisar():
                                    labels=['Até 40', '41 a 60', '61 a 80', 'Mais de 80'])
     taxas = (dados.groupby('faixa_etaria', observed=True)['avc'].mean() * 100).round(2)
     for faixa, taxa in taxas.items():
-        print(f"{faixa}: {taxa}%.2f")
+        print(f"{faixa}: {taxa:.2f}%")
